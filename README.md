@@ -2,7 +2,7 @@
 
 ## What is SimpleWebWrapper?
 
-SimpleWebWrapper is an Android library which helps you creating the activity UI more easier.
+SimpleWebWrapper is an Android library which helps you creating Wrappers for Webpages more easier.
 You just have to configure the main things instead of coding them yourself.
 
 ## How to use SimpleWebWrapper?
@@ -35,13 +35,17 @@ public class SampleActivity extends SimpleWebWrapperActivity {
 
 You can do this by using the *Implement Methods* options from Android Studios context menu.
 
+#### 3. Use `customInit()` instead of `onCreate()`
+
+**This is important. If you don't respect this the library might not work correct.**
+
 ### Sample activity
 
 There's a sample of how to use the library. You can find it <a href="https://github.com/jlelse/SimpleWebWrapper/tree/master/sample">here</a>
 
 ## Dependencies
 
-SimpleUI has the following Gradle dependencies:
+SimpleWebWrapper has the following Gradle dependencies:
 
 ```
 compile 'jlelse:SimpleUI:+'

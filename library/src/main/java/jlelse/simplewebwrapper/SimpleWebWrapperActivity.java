@@ -47,6 +47,8 @@ public abstract class SimpleWebWrapperActivity extends SimpleActivity {
 
     public abstract View.OnClickListener customFabOnClickListener();
 
+    public abstract void customInit();
+
     @Override
     public boolean fab() {
         if (shareFab()) {
@@ -144,6 +146,8 @@ public abstract class SimpleWebWrapperActivity extends SimpleActivity {
         setContent(webView);
 
         webView.loadUrl(startUrl());
+
+        customInit();
     }
 
     public WebView getWebView() {

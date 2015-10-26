@@ -57,6 +57,11 @@ public class SampleActivity extends SimpleWebWrapperActivity {
     }
 
     @Override
+    public void customInit() {
+
+    }
+
+    @Override
     public boolean drawer() {
         return true;
     }
